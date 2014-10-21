@@ -1,0 +1,597 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+
+		<!-------------------------<!--! META ------------------------------>
+		<title>Einheit 1 – Interaktive Prototypen mit HTML, CSS & JS</title>
+		<link rel="icon" href="imgs/sprites/favicon.ico" type="image/png" />
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+		<!-------------------------<!--! STYLES ------------------------------>
+		<link rel="stylesheet" type="text/css" href="../styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+
+		<!-------------------------<!--! LIBARIES ------------------------------>
+		<script type="text/javascript" src="../scripts/libaries/jquery.js"></script>
+
+		<!-------------------------<!--! SCRIPTS ------------------------------>
+		<script type="text/javascript" src="../scripts/scripts.js"></script>
+		<script type="text/javascript" src="../scripts/linenumbers.js"></script>
+		
+	</head>
+
+	<body>
+	
+		<div class="container">
+			<main>
+		
+				<article>
+					<h4>Tutorium
+					<span class="light">| Einheit 1 – 16.10.14</span></h4>
+				
+					<h1 class="title">Interaktive Prototypen<br>
+						<span class="light">mit HTML, CSS & JS</span></h1>				
+				</article>
+				
+				<article>
+					<h4>Tutor</h4>
+					<h1 class="title">Christoph Labacher</h1>
+					
+					<p><small>christoph.labacher@hfg-gmuend.de</small></p>
+				</article>
+
+				<article>
+					<h4>Teilnehmer</h4>
+					<h1 class="title">Name & Studiengang</h1>
+				</article>
+
+				<article>
+					<h4>Anwesenheit</h4>
+					<h1 class="title">Bitte abmelden.</h1>
+				</article>	
+
+				<article>
+					<h4>Inhalte</h4>
+					
+					<h2>Frondend-Webdesign:</h2>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Javascript / jQuery</li>
+					</ul>
+				</article>
+
+				<article>
+					<h4>Inhalte</h4>
+					
+					<h2>Zusatzwissen:</h2>
+					<ul>
+						<li>Tricks & Fixes</li>
+						<li>Best practices</li>
+						<li>Designing in Browser</li>
+						<li>Grundlagen Motion Design</li>
+					</ul>
+				</article>
+				
+				<article>
+					<h4>Ziel</h4>
+					
+					<h1 class="title"><span class="light">Ziel ist das Erstellen von dynamischen, animierten, interaktiven</span> Prototypen.</h1>
+				</article>
+
+				<article>
+					<h4>Beispiel</h4>
+					
+					<h2>OP-Management-System</h2>
+					<ul>
+						<li>Software zum Planen der Abläufe in einem OP.</li>
+						<li>Expertentool (OP-Management)</li>
+						<li>Funktionsprototyp mit Führung für die Ausstellung</li>
+					</ul>
+					<p><small class="grey"><a href="OPMS-Prototyp" target="_blank">Prototyp</a></small></p>
+				</article>
+
+				<article>
+					<h4>Beispiel</h4>
+					
+					<h2>Diese Präsentation</h2>
+				</article>
+
+				<article>
+					<h4>Unterschiede zu Webdesign</h4>
+
+					<h2>Kontrolliertes Setting:</h2>
+
+					<ul>
+						<li>Vorbestimmte Bildschirmgrößen</li>
+						<li>Ein Browser</li>
+						<li>Ein Rechner</li>
+						<li>Statischer Inhalt</li>
+					</ul>
+				</article>
+
+				<article>
+					<h4>Vorteile gegenüber Screenshots</h4>
+
+					<h2>Dynamische Screens:</h2>
+
+					<ul>
+						<li>Konzepte werden klar erkennbar</li>
+						<li>Informationsarchitektur kann durch Motion Design <br>unterstützt werden</li>
+						<li>Verschiedene States können gezeigt werden<br>(Mouseover)</li>
+						<li>Änderungen sind leicht umsetzbar<br>(Designing in Browser)</li>
+					</ul>
+				</article>	
+
+				<article>
+					<h4>Übersicht <span class="light">| Einheit 1</span></h4>
+
+					<ul><span class="grey">
+						<li>Tutor & Teilnehmer</li>
+						<li>Inhalte</li>
+						<li>Ziel</li>
+						<li>Beispiele</li>
+						<li>Unterschiede zu Webdesign</li>
+						<li>Vorteile gegenüber Screenshots</li></span>
+						<li>Übersicht Einheit 1</li>
+					</ul>
+				</article>
+				
+				<article>
+					<h4>Übersicht <span class="light">| Einheit 1</span></h4>
+
+					<ul>
+						<li>Frontend vs. Backend</li>
+						<li>Zusammenhänge zwischen HTML, CSS und Javascript</li>
+						<li>Einführung HTML</li>
+						<li>Grundaufbau eines HTML-Dokuments</li>
+						<li>Hyperlinks</li>
+						<li>Klärung der Begriffe Tags, Attribute, Werte</li>
+						<li>Kommentare</li>
+					</ul>
+				</article>
+				
+				<article>
+					<h4>Übersicht <span class="light">| Einheit 1</span></h4>
+
+					<ul>
+						<li>DOCTYPE</li>
+						<li>Informationen im head-Tag</li>
+						<li>Bock-Elmente vs. Inline-Elemente</li>
+						<li>Texte &amp; Typografie</li>
+						<li>Listen</li>
+					</ul>
+				</article>
+
+				<article class="cf">
+					<h4>Frontend vs. Backend</h4>
+
+					<section class="compare"><h2>Frontend</h2>
+					<ul>
+						<li>Interface der Website/Webapp</li>
+						<li>Code wird im Browser ausgeführt</li>
+						<li>Sprachen: HTML, CSS, Javascript</li>
+					</ul></section>
+					
+					<section class="compare"><h2>Backend</h2>
+					<ul>
+						<li>Dahinter liegende Funktionalität</li>
+						<li>Code wird auf dem Server ausgeführt</li>
+						<li>Sprachen: PHP, Ruby, Python, Javascript</li>
+						<li>Datenbanken: MySQL, Postgres, MangoDB</li>
+					</ul></section>
+				</article>
+				
+				<article>
+					<h4>Zusammenhänge zwischen HTML, CSS und Javascript</h4>
+										
+						<h2>HTML</h2>
+						<p>Struktur und Inhalt des Dokuments</p>
+						<h2>CSS</h2>
+						<p>Spezifikationen zu Aussehen und Animation</p>
+						<h2>Javascript</h2>
+						<p>Funktionalität des Interfaces</p>
+					</ul>
+				</article>				
+
+				<article>
+					<h4>Einführung HTML</h4>
+					
+					<h1 class="title">HyperText Markup Language</h1>
+				</article>
+
+				<article>
+					<h4>Einführung HTML</h4>
+					
+					<blockquote>
+						<p>HyperText is a way to <mark>link and access information</mark> of various kinds as a web of nodes in which the user can browse at will. A hypertext page has pieces of text which refer to other texts.</p>
+						
+						<p>Such references are highlighted and can be selected with a mouse. When you select a reference, the browser presents you with the text which is referenced: you have made the browser follow a <mark>hypertext link</mark>.</p>
+					</blockquote>
+					
+					<cite>T. Berners-Lee & R. Cailliau – WorldWideWeb: Proposal for a HyperText Project – 1990</cite>
+				</article>
+
+				<article>
+					<h4>Einführung HTML</h4>
+					
+					<h1 class="title"><span class="tag">&lt;tag&gt;</span>Inhalt<span class="tag">&lt;/tag&gt;</span></h1>
+				</article>
+	
+				<article>
+					<h4>Einführung HTML</h4>
+					
+						<section class="compare">	
+							<h2>Optische Tags</h2>
+							<p><span class="tag">&lt;u&gt;</span>Unterstrichener Text<span class="tag">&lt;/u&gt;</span></p>
+						</section>
+						
+						<section class="compare">	
+							<h2>Logische Tags</h2>
+							<p><span class="tag">&lt;mark&gt;</span>Relevanter Text<span class="tag">&lt;/mark&gt;</span></p>
+						</section>
+						
+						<section class="compare">
+							<h2>Optische und logische Tags</h2>
+							<p><span class="tag">&lt;h1&gt;</span>Überschrift ersten Grades<span class="tag">&lt;/h1&gt;</span></p>
+						</section>
+						
+						<section class="compare">
+							<h2>Reine Strukturtags</h2>
+							<p><span class="tag">&lt;section&gt;</span>Inhalt<span class="tag">&lt;/section&gt;</span></p><br>
+						</section>
+				</article>	
+				
+				<article>
+					<h4>Grundaufbau eines HTML-Dokuments</h4>
+					
+<div class="code-snippet cf">
+<cite><a href="grundaufbau.html" target="_blank">/einheit-01/grundaufbau.html</a></cite>
+<div class="lines"></div>
+<code>
+<pre>&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Grundaufbau eines HTML-Dokuments&lt;/title&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		Hier steht der Inhalt der Seite.
+	&lt;/body&gt;
+&lt;/html&gt;</pre>
+</code>
+</div>
+				</article>	
+				
+
+				
+				<article>
+					<h4>Hyperlinks</h4>
+<div class="code-snippet cf">
+<cite><a href="hyperlink.html" target="_blank">/einheit-01/hyperlink.html</a></cite>
+<div class="lines"></div>
+<code>
+<pre>&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Hyperlink&lt;/title&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		Das ist ein Hyperlink zum &lt;a href=&quot;grundaufbau.html&quot;&gt;Grundaufbau eines HTML-Dokuments.&lt;/a&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</pre>
+</code>
+</div>
+
+<div class="code-snippet cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;a href=&quot;Zielpfad&quot;&gt;Anzuzeigender Text&lt;/a&gt;</pre>
+</code>
+</div>
+
+				</article>
+				
+				<article>
+					<h4>Klärung der Begriffe Tags, Attribute, Werte</h4>
+
+					<h1 class="title" style="font-size: 1.9rem"><span class="tag">&lt;tag attribut=&quot;wert&quot;&gt;</span>Inhalt<span class="tag">&lt;/tag&gt;</span></h1>
+
+				</article>
+
+				<article>
+					<h4>Kommentare</h4>
+
+					<h1 class="title"><span class="tag">&lt;!-- Auskommentierter Text --&gt;</span></h1>
+				</article>
+
+
+				<article>
+					<h4>DOCTYPE</h4>
+
+					<h1 class="title"><span class="tag">&lt;!DOCTYPE HTML&gt;</span></h1>
+				</article>
+				
+				<article>
+					<h4>Informationen im head-Tag</h4>
+					
+<div class="code-snippet code-container scf">
+<div class="lines"></div>
+<code>
+<pre>&lt;title&gt;Titel der Seite&lt;/title&gt;</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;meta name=&quot;author&quot; content=&quot;Name des Autors&quot;&gt;</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;meta charset=&quot;utf-8&quot;&gt;</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;link rel=&quot;shortcut icon&quot; href=&quot;/favicon.ico&quot; /&gt;</pre>
+</code>
+</div>
+				</article>	
+				
+				<article>
+					<h4>Beispiel eines üblichen Dokument-Kopfes</h4>
+
+<cite><a href="dokumentkopf.html" target="_blank">/einheit-01/dokumentkopf.html</a></cite>
+<div class="code-container">			
+<div class="code-snippet cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;head&gt;
+
+    &lt;!-------------------------&lt;!--! META ------------------------------&gt;
+    &lt;title&gt;Website-Titel&lt;/title&gt;
+    
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;
+    
+    &lt;meta name=&quot;description&quot; content=&quot;Kurze Beschreibung des Inhalts der Website&quot;&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;Wichtige Stichw&ouml;rter/Suchbegriffe zum Inhalt der Website&quot;&gt;		
+
+    &lt;!-------------------------&lt;!--! FAVICON ------------------------------&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;imgs/sprites/favicon.ico&quot; type=&quot;image/png&quot;&gt;
+
+    &lt;!-------------------------&lt;!--! STYLES ------------------------------&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/styles/reset.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/styles/style.css&quot;&gt;
+    
+    &lt;!-------------------------&lt;!--! LIBARIES ------------------------------&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/libaries/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+    &lt;!-------------------------&lt;!--! SCRIPTS ------------------------------&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/scripts/script.js&quot;&gt;&lt;/script&gt;		
+    		
+&lt;/head&gt;</pre>
+</code>
+</div>
+</div>
+				</article>	
+				
+				<article class="cf">
+					<h4>Block-Elemente vs. Inline-Elemente</h4>
+
+					<section class="compare"><h2>Block-Elemente</h2>
+					<ul>
+						<li>Automatischer Zeilenumbruch danach</li>
+						<li>Dürfen andere Block-Elemente und Inline Elmente enthalten</li>
+					</ul></section>
+					
+					<section class="compare"><h2>Inline-Elemente</h2>
+					<ul>
+						<li>Kein automatischer Zeilenumbruch danach</li>
+						<li>Müssen sich in Block- oder Inline-Elementen befinden</li>
+						<li>Dürfen nur Inline-Elemente enthalten</li>
+					</ul></section>
+				</article>
+				
+				<article>
+					<h4>Texte &amp; Typografie</h4>
+					
+					<h2>Überschriften</h2>
+										
+<div class="code-container">			
+<div class="code-snippet cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;h1&gt;&Uuml;berschrift ersten Grades&lt;/h1&gt;
+&lt;h2&gt;&Uuml;berschrift zweiten Grades&lt;/h2&gt;
+&lt;h3&gt;&Uuml;berschrift dritten Grades&lt;/h3&gt;
+&lt;h4&gt;&Uuml;berschrift vierten Grades&lt;/h4&gt;
+&lt;h5&gt;&Uuml;berschrift f&uuml;nften Grades&lt;/h5&gt;
+&lt;h6&gt;&Uuml;berschrift sechsten Grades&lt;/h6&gt;</pre>
+</code>
+</div>
+</div>
+				</article>	
+				
+				<article>
+					<h4>Texte &amp; Typografie</h4>
+					
+					<h2>Absätze</h2>
+										
+<div class="code-container">			
+<div class="code-snippet cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;p&gt;Ein Absatz eines l&auml;ngeren Textes&lt;/p&gt;</pre>
+</code>
+</div>
+</div>
+										
+<div class="code-container">			
+<div class="code-snippet cf">
+<div class="lines"></div>
+<code>
+<pre>Ein Zeilenumbruch erreicht man durch ein einfaches Tag.&lt;br&gt;
+Es besitzt kein schlie&szlig;endes Pendant.</pre>
+</code>
+</div>
+</div>
+				</article>	
+				
+				<article>
+					<h4>Texte &amp; Typografie</h4>
+					
+					<h2>Textauszeichnung <span class="light">| Optische Tags</span></h2>
+										
+<div class="code-snippet code-container split cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;b&gt;Fett&lt;/b&gt;&lt;br&gt;
+&lt;i&gt;Kursiv&lt;/i&gt;&lt;br&gt;
+&lt;u&gt;Unterstrichen&lt;/u&gt;&lt;br&gt;
+&lt;s&gt;Durchgestrichen&lt;/s&gt;&lt;br&gt;
+&lt;small&gt;Klein&lt;/small&gt;</pre>
+</code>
+<div class="result">
+<b>Fett</b><br>
+<i>Kursiv</i><br>
+<u>Unterstrichen</u><br>
+<s>Durchgestrichen</s><br>
+<small>Klein</small>
+</div>
+</div>	
+				</article>	
+				
+				<article>
+					<h4>Texte &amp; Typografie</h4>
+					
+					<h2>Textauszeichnung <span class="light">| Logische Tags</span></h2>
+										
+<div class="code-snippet code-container split cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;em&gt;Betont&lt;/em&gt;&lt;br&gt;
+&lt;strong&gt;Hervorgehoben&lt;/strong&gt;&lt;br&gt;
+&lt;mark&gt;Relevant&lt;/mark&gt;</pre>
+</code>
+<div class="result">
+<em>Betont</em><br>
+<strong>Hervorgehoben</strong><br>
+<mark>Relevant</mark>
+</div>
+</div>	
+				</article>	
+	
+				<article>
+					<h4>Texte &amp; Typografie</h4>
+					
+					<h2>Textauszeichnung <span class="light">| Art des Inhalts</span></h2>
+										
+<div class="code-snippet code-container split cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;time&gt;24:00&lt;/time&gt;&lt;br&gt;
+&lt;q&gt;Zitat&lt;/q&gt;&lt;br&gt;
+&lt;cite&gt;Quelle&lt;/cite&gt;&lt;br&gt;
+&lt;code&gt;Code&lt;/code&gt;</pre>
+</code>
+<div class="result">
+<time>24:00</time><br>
+<q>Zitat</q><br>
+<span class="cite">Quelle</span><br>
+<code>Code</code>
+</div>
+</div>	
+				</article>		
+				
+				<article>
+					<h4>Texte &amp; Typografie</h4>
+					
+					<h2>Listen <span class="light">| Unsortierte Listen</span></h2>
+										
+<div class="code-snippet code-container split cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;ul&gt;
+	&lt;li&gt;Listenelement&lt;/li&gt;
+	&lt;li&gt;Listenelement&lt;/li&gt;
+	&lt;li&gt;Listenelement&lt;/li&gt;
+&lt;/ul&gt;</pre>
+</code>
+<div class="result">
+<ul>
+	<li>Listenelement</li>
+	<li>Listenelement</li>
+	<li>Listenelement</li>
+</ul>
+</div>
+</div>	
+				</article>
+				
+<article>
+					<h4>Texte &amp; Typografie</h4>
+					
+					<h2>Listen <span class="light">| Sortierte Listen</span></h2>
+										
+<div class="code-snippet code-container split cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;ol&gt;
+	&lt;li&gt;Listenelement&lt;/li&gt;
+	&lt;li&gt;Listenelement&lt;/li&gt;
+	&lt;li&gt;Listenelement&lt;/li&gt;
+&lt;/ol&gt;</pre>
+</code>
+<div class="result">
+<ol>
+	<li>Listenelement</li>
+	<li>Listenelement</li>
+	<li>Listenelement</li>
+</ol>
+</div>
+</div>	
+				</article>
+
+	
+				<article>
+					<h4>Hausaufgaben</h4>
+										
+					<ul>
+						<li>Zusammenfassung durchlesen</li>
+						<li>Insbesondere <b>Tools</b> und <b>Hilfe-Ressourcen</b></li>
+						<li>Für einen Editor entscheiden und diesen installieren</li>
+						<li>GitHub-Account erstellen und mit den Nutzernamen schicken</li>
+					</ul>
+				</article>
+				
+				<article>
+					<h4>Feedback</h4>
+					<h1 class="title">Angemessene Geschwindigkeit?</h1>
+				</article>				
+			
+				<article>
+					<h4>Nächste Sitzung</h4>
+										
+					<h1 class="title">
+					<span class="light">Einheit 2</span><br>23.10.14</h1>
+				</article>				
+			
+			</main>
+		</div>
+		
+		<div class="progress">
+			<div class="bar"><span class="current">2</span> / <span class="all">10</span></div>
+		</div>
+	
+	</body>
+	
+</html>

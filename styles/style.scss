@@ -1,0 +1,476 @@
+/************************
+*		VARIABLES		*
+************************/
+
+/*	Colors
+************************/
+
+// Background
+$white: rgba(255,255,255,1);
+// Text, LinksHover
+$black: rgba(30,30,30,1);
+// CodeBG
+$verylightgrey: rgba(250,250,250,1);
+// LinksInactive, LinksCite, CodeBorder, CodeNumbersBG
+$lightgrey: rgba(235,235,235,1);
+// LinksUnderline, LinksCiteHover, CodeNumbers
+$grey: rgba(170,170,170,1);
+// Links, CodeText
+$darkgrey: rgba(125,125,125,1);
+// LinksUnderlineHover
+$verydarkgrey: rgba(100,100,100,1);
+
+/************************
+*		TYPOGRAPHY		*
+************************/
+
+/*	Webfonts
+************************/
+@import url('http://fonts.googleapis.com/css?family=Fira+Sans:300,400,500');
+@import url('http://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+html { font-size: 50px;  } 
+
+body 	{
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+	color: $black;
+	background-color: #000000;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.3em;
+	text-align: left;
+	text-rendering: optimizeLegibility;
+	font-variant-ligatures: inherit;
+	overflow-x: hidden;
+	word-wrap: normal;
+}
+
+a	{
+	color: $darkgrey;
+	text-decoration: underline;
+/*
+	text-shadow: 0px 1px 0px white;
+	background-image: linear-gradient(to bottom, $white 88%, $grey 90%, $white 93%);
+	background-repeat: repeat-x;
+*/
+	
+	&:hover	{
+		color: $black;
+		text-decoration: underline;
+		cursor: pointer;
+/* 		background-image: linear-gradient(to bottom, $white 88%, $verydarkgrey 90%, $white 93%);	 */
+	}
+}
+
+a.inactive	{
+	color: $lightgrey;
+	text-decoration: none;
+	background-image: none;
+	
+	&:hover	{
+		color: $lightgrey;
+		text-decoration: none;
+		background-image: none;
+		cursor: pointer;
+	}
+}
+
+b, strong	{
+	font-weight: 500;
+}
+
+i, em	{
+	font-style: italic;
+	font-weight: 200;
+}
+
+small	{
+	font-size: 0.6rem;
+	color: $grey;
+}
+
+mark	{
+	font-weight: 500;
+	font-style: inherit;
+	background-color: inherit;
+	color: inherit;
+}
+
+p	{
+	margin-bottom: 1rem;
+}
+
+.light	{
+	font-size: 1em;
+	font-weight: 300;
+}
+
+.grey	{
+	color: $lightgrey;
+}
+
+h1	{
+	font-size: 2rem;
+	line-height: 1.2em;
+	font-weight: 500;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+		
+	&.title	{
+		margin-top: 9rem !important;
+		margin-bottom: 0;
+		vertical-align: bottom;
+	}
+}
+
+h1:first-child	{
+    margin-top: 0;
+}
+
+h2	{
+	font-size: 1rem;
+	font-weight: 500;
+	margin-bottom: 0.4rem;
+}
+
+h2:first-child, , h1 + h2	{
+	padding-top: 0;
+    margin-top: 0;
+}
+
+h3	{
+	line-height: 1em;
+	font-weight: 300;
+	margin-top: 1rem;
+	margin-bottom: 0.7rem;
+}
+
+h3:first-child, h2 + h3	{
+    margin-top: 0;
+}
+
+h4	{
+	font-weight: 500;
+	font-size: 0.6rem;
+	line-height: 1.4em;
+	color: $grey;
+	margin-bottom: 1.5rem;
+}
+
+ul, ol 	{
+	margin-bottom: 0.7rem;
+}
+
+ul li	{
+	list-style: none;
+	margin-bottom: .5rem;
+
+	&:before	{
+		content: "_";	
+		padding-right: .2rem;
+		margin-left: -.7rem;
+	}
+}
+
+::selection {
+    color: $white; 
+    background: $black;
+}
+
+cite	{
+	font-size: 0.5rem;
+	line-height: 1em;
+	font-weight: 200;
+    color: $grey;
+	padding: 0;
+	//margin-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+	transition: all 0.3s;
+	
+	&:hover	{
+	   color: $grey;
+	   cursor: pointer;
+    }
+    
+    a	{
+    	color: $lightgrey;
+    	text-decoration: none;
+    	background: none;
+    	transition: all 0.3s;
+    	
+    	&:hover	{
+    		color: $grey;
+    	}
+    }		
+}
+
+blockquote	{	
+	//color: $darkgrey;
+	//background-color: $verylightgrey;
+	//border: 1px solid $grey;
+	border-radius: 10px;				
+	margin-bottom: .5rem;
+	font-style: italic;
+	font-weight: 200;
+	width: 80%;
+	line-height: 1.4em;
+
+	p:last-child	{
+		margin-bottom: 0;
+	}
+}
+
+.tag	{
+	font-family: "Fira Mono", monospace;
+	font-size: 0.85em;	
+	color: $darkgrey;
+}
+
+.code-container	{
+	max-height: 700px;	
+	overflow-y: auto;
+	overflow-x: hidden;
+	border-radius: 10px;	
+	margin-bottom: 1.5rem;
+
+}
+
+.code-snippet	{
+	font-family: "Fira Mono", monospace;
+	font-size: 0.6rem;
+	line-height: 1.5em;	
+	width: 100%;	
+	display: block;
+	
+	.lines	{
+		color: $grey;
+		background-color: $lightgrey;
+		border-radius: 10px 0 0 10px;		
+		padding: 0.5rem 0.3rem;
+		text-align: right;
+		float: left;
+		display: block;
+		width: 5.3%;
+	}	
+	
+	code	{
+		float: left;
+		display: block;
+		tab-size: 3;	
+		color: $darkgrey;
+		background-color: $verylightgrey;
+		border-radius: 0 10px 10px 0;				
+		padding: 0.5rem 0.7rem;
+		width: 94.7%;
+		overflow-wrap: normal;
+		overflow-x: auto;
+	}	
+}
+
+	
+h1  + .code-snippet, h2  + .code-snippet, h3 + .code-snippet	{
+	margin-top: 0;
+}
+
+.code-snippet.split	{
+	code	{
+		width: 50% !important;
+		border-radius: 0;
+		border: 3px solid $lightgrey;
+		border-left: none;
+	}
+	.result	{
+		font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+		font-size: 0.7rem;
+		line-height: 1.5em;
+		float: left;
+		display: block;
+		color: $darkgrey;
+		border: 3px solid $lightgrey;
+		border-left: none;
+		border-radius: 0 10px 10px 0;				
+		padding: 1rem;
+		overflow-wrap: normal;
+		overflow-x: auto;
+		width: 44.7%;
+		
+		small	{ font-size: 0.5em;}
+		
+		li	{
+			margin-left: 20px;
+		}
+		
+		ul li	{
+			list-style: disc outside none;
+			display: list-item;
+			margin-bottom: 0;
+			
+			&:before{
+				content: "";
+				padding-right: 0;
+				margin-left: 0;
+			}
+		}
+		
+		mark	{
+			font-style: italic;
+			background-color: yellow;
+			color: black;
+		}
+		
+		q	{ font-style: italic;	}
+		
+		span.cite	{
+			color: $grey;
+			font-style: italic;
+		}
+			
+		code	{
+			display: inline;
+			color: $darkgrey;
+			background-color: transparent;
+			border-radius: 0;				
+			padding: 0;
+			border: none;
+		}
+	}	
+}
+
+/************************
+*		STRUCTURE		*
+************************/
+
+.container	{
+	width: 1920px;
+	height: 1080px;
+	overflow: hidden;
+}
+
+main	{
+	position: relative;
+	top: 0;
+	transition: all 1s;
+}
+
+article	{
+	width: 1920px;
+	height: 1080px;
+	padding: 100px 150px;
+	overflow: hidden;
+	background-color: white;
+}
+
+article:last-of-type	{
+	background-color: $grey;	
+	
+	p, h1, h2, h3, h4	{
+		color: $white;		
+	}
+}
+
+.compare	{
+	float: left;
+	width: 50%;
+	margin-bottom: 2rem;
+}
+
+.compare:nth-of-type(odd)	{
+	width: 40%;
+	padding-right: 5%;
+	clear: both;
+
+}
+
+.compare:nth-of-type(even)	{
+	width: 45%;
+	padding-left: 10%;
+	border-left: 1px solid $lightgrey;
+}
+
+iframe	{
+	width: 1920px - 300px;
+	height: 1080px - 280px;
+	border: 2px solid $lightgrey;
+}
+
+$barheight : 10px;
+$barheight2 : 60px;
+
+.progress	{
+	width: 1920px;
+	height: $barheight;
+	position: fixed;
+	top: 1080px - $barheight;
+	overflow: hidden;
+	transition: all 1s;
+	background-color: $lightgrey;
+	
+	.bar	{
+		width: 0%;
+		height: $barheight2;
+		background-color: $grey;
+		transition: all 1s;
+
+		color: $white;
+		font-size: 0.5rem;
+		line-height: 1em;
+		padding: 20px;
+		text-align: center;
+	}
+	
+	&:hover	{
+		height: $barheight2;
+		top: 1080px - $barheight2;
+		cursor: pointer;
+		
+		.bar	{
+			height: $barheight2;
+		}
+	}
+}
+
+/************************
+*		CONTENTS		*
+************************/
+
+
+/************************
+*		RESPONSIVE		*
+************************/
+
+
+@media all and (min-width: 440px) {
+}
+
+@media all and (min-width: 640px) {
+}
+
+
+@media all and (min-width: 720px) {					
+}
+
+/************************
+*		CLEARFIX		*
+************************/
+
+.cf:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ 
+html[xmlns] .cf {
+    display: block;
+}
+ 
+* html .cf {
+    height: 1%;
+}
+
+/*************************************************/
+
+
