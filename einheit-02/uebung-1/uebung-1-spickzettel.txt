@@ -1,0 +1,70 @@
+# Übersicht über die wichtigsten Tags
+
+## Allgemein
+
+<tag attribut="wert">Inhalt</tag>
+<!-- Kommentar -->
+
+## Grundstruktur
+
+<html>
+	<head>
+	</head>
+	
+	<body>
+	</body>
+</html>
+
+## Head-Informationen
+
+<!DOCTYPE HTML>
+<title>Titel der Seite</title>
+<meta name="author" content="Autor">
+<meta charset="utf-8">
+
+## Texte & Typografie
+
+### Überschriften
+
+<h1>Überschrift ersten Grades</h1>
+<h2>Überschrift zweiten Grades</h2>
+<h3>Überschrift dritten Grades</h3>
+<h4>Überschrift vierten Grades</h4>
+<h5>Überschrift fünften Grades</h5>
+<h6>Überschrift sechsten Grades</h6>
+
+### Absätze
+
+<p>Absatz</p>
+Zeilenumbruch<br>
+
+### Textauszeichnung: Optisch
+
+<b>Fett</b>
+<i>Kursiv</i>
+<u>Unterstrichen</u>
+<s>Durchgestrichen</s>
+<small>Klein</small>
+
+### Textauszeichnung: Logisch
+
+<em>Betont</em>
+<strong>Hervorgehoben</strong>
+<mark>Relevant</mark>
+
+### Textauszeichnung: Inhalt
+
+<time>24:00</time>
+<q>Zitat</q>
+<cite>Quelle</cite>
+<code>Code</code>
+
+### Listen
+
+<ul>Unsortierte Liste</ul>
+<ol>Sortierte Liste</ol>
+<li>Listenelement</li>
+
+<dl>Definitonsliste</dl>
+<dt>Zu definierender Inhalt</dt>
+<dd>Definition</dd>

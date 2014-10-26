@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Übung 1</title>		
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+		
+		<p>HTML 5.1 Nightly – Ä vocabulary and associated APIs for HTML and XHTML – Editor's Draft 21 October 2014</p>
+		
+		<!-- Bei Links die noch kein Zeil haben sollen (als Platzhalter) fügt man ein # als Wert des Attributs href ein. -->
+		<p><a href="#">‹ 2 Common infrastructure</a> – <a href="#">Table of contents</a> – <a href="#">4 The elements of HTML ›</a></p>
+		
+		<h1>3 Semantics, structure, and APIs of HTML documents</h1>
+		
+		<h2>3.2 Elements</h2>
+		
+		<h3>3.2.1 Semantics</h3>
+
+		<p><i>This section is non-normative.</i></p>
+
+		<p>Elements, attributes, and attribute values in <b>HTML</b> are defined (by this specification) to have certain meanings (semantics). For example, the ol element represents an ordered list, and the lang attribute represents the language of the content.</p>
+
+		<p>These definitions allow <b>HTML</b> processors, such as Web browsers or search engines, to present and use documents and applications in a wide variety of contexts that the author might not have considered.</p>
+
+		<h4>Code Example:</h4>
+		
+<!-- Trotz Code-Tag wird der Inhalt ohne Zeilenumbrüche und Tabs dargestellt (genau wie ein gewöhnliches p-Element), Deshalb verwenden wir das pre-Tag. So wird die Formatierung exakt aus dem HTML-Dokument übernommen. -->
+<pre><code>&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&quot;en&quot;&gt
+	&lt;head&gt;
+		&lt;title&gt;My Page&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Welcome to my page&lt;/h1&gt;
+		&lt;p&gt;I like cars and lorries and have a big Jeep!&lt;/p&gt;
+		&lt;h2&gt;Where I live&lt;/h2&gt;
+		&lt;p&gt;I live in a small hut on a mountain!&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+		<h3>3.2.3 Element definitions</h3>
+		
+		<p>Each element in this specification <em>has</em> to have a definition that includes the following information:</p>
+		
+		<ul>
+			<li>Categories</li>
+			<li>Contexts in which this element can be used</li>
+			<li>Content model</li>
+			<li>Tag omission in text/html</li>
+			<li>Content attributes</li>
+		</ul>
+
+		<p><strong>Warning: Otherwise it is not valid!</strong></p>
+
+		<h2>3.3 Content models</h2>
+		
+		<p>Each element defined in this specification has a content model: a description of the element's expected contents. An HTML element must have contents that match the requirements described in the element's content model. The contents of an element are its children in the DOM, except for template elements, where the children are those in the template contents (a separate DocumentFragment assigned to the element when the element is created).</p>
+
+		<!-- Das time-Tag kann als Wert des Attributs datetime eine maschinenlesbare Version des Datums enthalten. -->
+		<p>Created <time datetime="2014-10-21 09:00">21 October 2014 15:52</time></p>
+		<!-- Soll ein Link direkt mit dem E-Mail-Programm geöffnet werden, fügt man zu Beginn des Wertes des href-Attributs ein "mailto:" hinzu. -->
+		<p><a href="mailto:info@w3c.org">info@w3c.org</a></p>
+
+	</body>
+</html>

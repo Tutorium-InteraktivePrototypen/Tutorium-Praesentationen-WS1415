@@ -1,0 +1,50 @@
+HTML 5.1 Nightly – A vocabulary and associated APIs for HTML and XHTML – Editor's Draft 21 October 2014
+
+‹ 2 Common infrastructure – Table of contents – 4 The elements of HTML ›
+
+3 Semantics, structure, and APIs of HTML documents
+
+3.2 Elements
+
+3.2.1 Semantics
+
+This section is non-normative.
+
+Elements, attributes, and attribute values in HTML are defined (by this specification) to have certain meanings (semantics). For example, the ol element represents an ordered list, and the lang attribute represents the language of the content.
+
+These definitions allow HTML processors, such as Web browsers or search engines, to present and use documents and applications in a wide variety of contexts that the author might not have considered.
+
+Code Example:
+
+&lt;!DOCTYPE HTML&gt;
+&lt;html lang=&quot;en&quot;&gt
+	&lt;head&gt;
+		&lt;title&gt;My Page&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Welcome to my page&lt;/h1&gt;
+		&lt;p&gt;I like cars and lorries and have a big Jeep!&lt;/p&gt;
+		&lt;h2&gt;Where I live&lt;/h2&gt;
+		&lt;p&gt;I live in a small hut on a mountain!&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+3.2.3 Element definitions
+
+Each element in this specification has to have a definition that includes the following information:
+
+Categories
+Contexts in which this element can be used
+Content model
+Tag omission in text/html
+Content attributes
+
+
+Warning: Otherwise it is not valid!
+
+3.3 Content models
+
+Each element defined in this specification has a content model: a description of the element's expected contents. An HTML element must have contents that match the requirements described in the element's content model. The contents of an element are its children in the DOM, except for template elements, where the children are those in the template contents (a separate DocumentFragment assigned to the element when the element is created).
+
+Created 21 October 2014 15:52
+info@w3c.org

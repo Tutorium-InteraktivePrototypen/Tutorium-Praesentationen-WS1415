@@ -1,0 +1,49 @@
+# CSS-Eigenschaften
+
+## CSS in HTML einbinden
+<link rel="stylesheet" type="text/css" href="style.css">
+
+## Typografie
+
+### Schriftfamilie (falls Leerzeichen in Anführungszeichen)
+Wird von links nach rechts ausprobiert, falls nicht auffindbar wird die Standardschrift aus der Kategorie (serif|sans-serif|monospace) verwendet.
+font-family: "Fira Sans", Helvetica, Arial, sans-serif;		
+
+### Schriftgröße in Pixel
+font-size: 14px;
+
+### Zeilenabstand in Pixel	
+line-height: 16px;	
+
+### Schriftdicke
+Kann auch durch Zahlen (300, 400, …) angegeben werden.
+font-weight: thin|normal|bold;
+
+### Schriftschnitt
+font-style: regular|italic|olique;
+
+### Textausrichtung
+text-align: left|center|right;
+
+### Textdekoration
+text-decoration: none|overline|line-through|underline;
+
+### Schriftfarbe
+color: black;
+
+## Farbe
+
+### Hex
+Wird mit "#" angegeben, dann RGB in Hexadezimalerdarstellung
+#FFFFFF = weiß
+#FF0000 = rot
+#000000 = schwarz
+
+### RGBA
+Wird in nach rgba in Klammern notiert. RGB + Alpha
+rgba(255,255,255,1) = weiß
+rgba(255,0,0,1) = rot
+rgba(0,0,0,1) = schwarz
+
+### Hintegrundfarbe
+background-color: #FF0000;

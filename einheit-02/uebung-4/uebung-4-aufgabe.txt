@@ -1,0 +1,1 @@
+Verfeinere deine Styles, in dem du div, span, id und class in deinem HTML-Dokument verwendest und diese mit Hilfe von einfachen Selektoren stylst.

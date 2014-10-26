@@ -1,0 +1,3 @@
+Strukturiere das HTML-Dokument, in dem du die semantisch korrekten Struktur-Tags verwendest.
+
+Im Browser ergibt sich keine merkbare Änderung – erst wenn wir das Dokument stylen werden sich die Struktur-Tags als hilfreich erweißen. (Unter Umstände wird das h1-Element kleiner Dargestellt, das liegt am Stylesheet des Browsers und soll unbeachtet bleiben.)

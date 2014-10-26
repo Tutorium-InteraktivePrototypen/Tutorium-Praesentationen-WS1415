@@ -1,0 +1,9 @@
+# Strukturtags
+
+<main>Hauptinhalt der Seite</main>
+<nav>Hauptnavigation</nav>
+<aside>Untergeordneter Inhalt</aside>
+<header>Kopfelement einer Seite oder eines Abschnitts (z.B. eines Blog-Posts)</header>
+<footer>Fußelement eines Seite oder eines Abschnitts</footer>
+<article>Eine größere Einheit von Inhalt (z.B. ein Blog-Post oder ein Kapitel)</article>
+<section>Logische Einheit/Abschnitt eines größeren Inhalts</section>

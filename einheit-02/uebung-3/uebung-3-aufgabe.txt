@@ -1,0 +1,5 @@
+Style das HTML-Dokument, in dem du ein externes Stylesheet hinzufügst und Regeln für die verschiedenen Textauszeichnungs- und Strukturtags definierst.
+
+Wie das ganze am Ende aussehen soll kannst du sehen, in dem du die Datei uebung-03-loesung.html im Browser öffnest.
+
+Achtung: Es gibt einige Feinheiten in der Lösung, die du noch nicht kennen kannst. Diese sind als Kommentare im Lösungscode erklärt.

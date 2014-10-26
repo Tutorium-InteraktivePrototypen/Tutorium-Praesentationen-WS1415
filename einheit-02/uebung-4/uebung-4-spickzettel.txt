@@ -1,0 +1,19 @@
+# Id, class
+<foo id="id kommt nur einmal vor"></foo>
+<foo class="klasse kommt mehrmals vor"></foo>
+
+# Div, span
+<div>Ungestyltes Block-Element</div>
+<span>Ungestyltes Inline-Element</div>
+
+# Einfache CSS-Selektoren (Können kombiniert werden)
+
+a & b stehen für beliebige HTML-Elemente
+
+a b {} // Alle b in a
+a, b {} // Alle a und alle b
+.test // Alles mit der class test
+a.test // Alle a mit der class test
+b.test // Alle b mit der class test
+#test // Element mit der id test
+a#test // a mit der id test (unnötig da sich das Element durch die id ergibt)
