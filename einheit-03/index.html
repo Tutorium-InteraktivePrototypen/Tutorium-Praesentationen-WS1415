@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+
+		<!-------------------------<!--! META ------------------------------>
+		<title>Einheit 2 – Interaktive Prototypen mit HTML, CSS & JS</title>
+		<link rel="icon" href="imgs/sprites/favicon.ico" type="image/png" />
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+		<!-------------------------<!--! STYLES ------------------------------>
+		<link rel="stylesheet" type="text/css" href="../styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+
+		<!-------------------------<!--! LIBARIES ------------------------------>
+		<script type="text/javascript" src="../scripts/libaries/jquery.js"></script>
+
+		<!-------------------------<!--! SCRIPTS ------------------------------>
+		<script type="text/javascript" src="../scripts/scripts.js"></script>
+		<script type="text/javascript" src="../scripts/linenumbers.js"></script>
+		
+	</head>
+
+	<body>
+	
+		<div class="container">
+			<main>
+		
+				<article>
+					<h4>Tutorium
+					<span class="light">| Einheit 3 – 30.10.14</span></h4>
+				
+					<h1 class="title">Interaktive Prototypen<br>
+						<span class="light">mit HTML, CSS & JS</span></h1>				
+				</article>
+				
+				<article>
+					<h4>Vorgehen</h4>
+										
+					<ul>
+						<li>Skizze/Entwurf</li>
+						<li>Einteilen in Blöcke/Elemente</li>
+						<li>Stammbaum erstellen</li>
+						<li>HTML-Code ableiten</li>
+						<li>Mit CSS stylen</li>
+					</ul>
+				</article>	
+				
+				<article>
+					<h4>Übersicht <span class="light">| Einheit 2</span></h4>
+										
+					<ul>
+						<li>Das Box-Modell</li>
+						<li><span class="tag">&lt;div&gt;</span>, <span class="tag">&lt;span&gt;</span></li>
+						<li>id, class</li>
+					</ul>
+				</article>	
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 2 | Einfache Selektoren</h4>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>h1</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>h1, h2</pre>
+</code>
+</div>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>article h1</pre>
+</code>
+</div>
+
+				</article>
+				
+				
+				<article class="cf">
+					<h4>Wiederholung <span class="light">| Einheit 1 | Block-Elemente vs. Inline-Elemente</span></h4>
+
+					<section class="compare"><h2>Block-Elemente</h2>
+					<ul>
+						<li>Automatischer Zeilenumbruch danach</li>
+						<li>Dürfen andere Block-Elemente und Inline Elmente enthalten</li>
+					</ul></section>
+					
+					<section class="compare"><h2>Inline-Elemente</h2>
+					<ul>
+						<li>Kein automatischer Zeilenumbruch danach</li>
+						<li>Müssen sich in Block- oder Inline-Elementen befinden</li>
+						<li>Dürfen nur Inline-Elemente enthalten</li>
+					</ul></section>
+				</article>
+				
+				<article>
+					<h4>Das Box-Modell</h4>
+					
+					<img src="imgs/01.png" height="700px">
+					
+				</article>
+				
+				<article>
+					<h4>Das Box-Modell</h4>
+					
+					<img src="imgs/02.png" height="700px">
+					
+				</article>
+				
+				<article>
+					<h4>Das Box-Modell</h4>
+					
+					<img src="imgs/03.png" height="700px">
+					
+				</article>
+				
+<article>
+					<h4>Das Box-Modell</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	margin: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 300px;
+	width: 400px;
+	border-width: 1px;
+	background-color: #FF0000;
+}</pre>
+</code>
+</div>
+
+				</article>
+				
+				<article>
+					<h4>Das Box-Modell</h4>
+					
+<div style="box-sizing: content-box;
+	margin: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 300px;
+	width: 400px;
+	border: 10px solid #000000;
+	background-color: #FF0000;">Test</div>
+	
+<div style="box-sizing: content-box;
+margin: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 300px;
+	width: 400px;
+	border: 10px solid #000000;
+	background-color: #FF0000;">Test</div>
+
+				</article>
+
+				
+				<article>
+					<h4>Das Box-Modell</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>body	{
+	box-sizing: border-box;
+}</pre>
+</code>
+</div>
+
+				</article>
+				
+				
+				<article>
+					<h4>Das Box-Modell</h4>
+					
+					<img src="imgs/04.png" height="700px">
+					
+				</article>
+				
+				<article>
+					<h4>Das Box-Modell</h4>
+					
+<div style="box-sizing: border-box;
+	margin: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 300px;
+	width: 400px;
+	border: 10px solid #000000;
+	background-color: #FF0000;">Test</div>
+	
+<div style="box-sizing: border-box;
+margin: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 300px;
+	width: 400px;
+	border: 10px solid #000000;
+	background-color: #FF0000;">Test</div>
+
+				</article>
+
+	
+			
+				<article class="cf">
+					<h4>Wiederholung <span class="light">| Einheit 1 | Block-Elemente vs. Inline-Elemente</span></h4>
+
+					<section class="compare"><h2>Block-Elemente</h2>
+					<ul>
+						<li>Automatischer Zeilenumbruch danach</li>
+						<li>Dürfen andere Block-Elemente und Inline Elmente enthalten</li>
+					</ul></section>
+					
+					<section class="compare"><h2>Inline-Elemente</h2>
+					<ul>
+						<li>Kein automatischer Zeilenumbruch danach</li>
+						<li>Müssen sich in Block- oder Inline-Elementen befinden</li>
+						<li>Dürfen nur Inline-Elemente enthalten</li>
+					</ul></section>
+				</article>
+				
+			<article>
+					<h4>&lt;div&gt;, &lt;span&gt;</h4>
+					
+					<h2 class="tag">&lt;div&gt;</h2>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;div id=&quot;Block-Element&quot;&gt;Inhalt&lt;/div&gt;</pre>
+</code>
+</div>
+					
+					<h2 class="tag">&lt;span&gt;</h2>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;span class=&quot;Inline-Element&quot;&gt;Inhalt&lt;/span&gt;</pre>
+</code>
+</div>
+	
+			</article>
+			
+			
+				<article>
+					<h4>id, class</h4>
+					
+					<h2>Id</h2>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;h1 id=&quot;einmalig&quot;&gt;Inhalt&lt;/h1&gt;</pre>
+</code>
+</div>
+					
+					<h2>Class</h2>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;h1 class=&quot;mehrmals&quot;&gt;Inhalt&lt;/h1&gt;</pre>
+</code>
+</div>
+	
+			</article>
+			
+				<article>
+					<h4>Einfache Selektoren</h4>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>.code-snippet-container</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>#code-snippet-container</pre>
+</code>
+</div>
+
+				</article>
+				
+<article>
+					<h4>Einfache Selektoren</h4>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>h1.title</pre>
+</code>
+</div>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>article h1.title</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>#code-snippet-container code#lines</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>h1.title, h2.title</pre>
+</code>
+</div>
+
+				</article>
+
+				<article>
+					<h4>Regel</h4>
+
+					<h1 class="title">Niemals id für CSS verwenden.</h1>
+
+				</article>
+
+				
+				<article>
+					<h4>Nächste Sitzung</h4>
+										
+					<h1 class="title">
+					<span class="light">Einheit 4</span><br>06.11.14</h1>
+				</article>				
+			
+			</main>
+		</div>
+		
+		<div class="progress">
+			<div class="bar"><span class="current">2</span> / <span class="all">10</span></div>
+		</div>
+	
+	</body>
+	
+</html>
