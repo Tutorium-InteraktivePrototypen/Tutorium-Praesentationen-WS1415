@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/************************
+*		STRUCTURE		*
+************************/
+
+body	{
+	background-color: #AAAAAA;
+	width: 100%;
+}
+
+main	{
+	background-color: #FFFFFF;
+	
+	width: 100%;
+	max-width: 800px;
+	height: 2000px;
+	padding: 10px;
+	margin: 0 auto;
+
+}

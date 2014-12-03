@@ -1,0 +1,483 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+
+		<!-------------------------<!--! META ------------------------------>
+		<title>Einheit 5 – Interaktive Prototypen mit HTML, CSS & JS</title>
+		<link rel="icon" href="imgs/sprites/favicon.ico" type="image/png" />
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+		<!-------------------------<!--! STYLES ------------------------------>
+		<link rel="stylesheet" type="text/css" href="../styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+
+		<!-------------------------<!--! LIBARIES ------------------------------>
+		<script type="text/javascript" src="../scripts/libaries/jquery.js"></script>
+
+		<!-------------------------<!--! SCRIPTS ------------------------------>
+		<script type="text/javascript" src="../scripts/scripts.js"></script>
+		<script type="text/javascript" src="../scripts/linenumbers.js"></script>
+		
+	</head>
+
+	<body>
+	
+		<div class="container">
+			<main>
+		
+				<article>
+					<h4>Tutorium
+					<span class="light">| Einheit 5 – 13.11.14</span></h4>
+				
+					<h1 class="title">Interaktive Prototypen<br>
+						<span class="light">mit HTML, CSS & JS</span></h1>				
+				</article>
+				
+				<article>
+					<h4>Übersicht <span class="light">| Einheit 5</span></h4>
+										
+					<ul>
+						<li>Wiederholung: float, clearfix</li>
+						<li>Wiederholung: display</li>
+						<li>Wiederholung: Größenangaben</li>
+						<li>Positionierung</li>
+						<li>Browsertools</li>
+						<li>Box-Styling</li>
+					</ul>
+				</article>	
+				
+<article>
+					<h4>Korrektur <span class="light">| box-sizing</h4>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>html {  
+  box-sizing: border-box; /* Ch, Saf 5.1+, IE 8+, Op 9+  */
+  -webkit-box-sizing: border-box; /* Saf &lt;5.1, */
+  -moz-box-sizing: border-box; /* Fx */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}</pre>
+</code>
+</div>
+
+</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 4 | Größenangaben</h4>
+
+					<h2>Pixel</h2>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	width: 200px;
+}</pre>
+</code>
+</div>
+
+</article>
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 4 | Größenangaben</h4>
+
+					<h2>Prozent</h2>
+					<p>Relativ zum Elternelement</p>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	width: 50%;
+}</pre>
+</code>
+</div>
+
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 4 | Größenangaben</h4>
+
+					<h2>em</h2>
+					<p>font-size (des aktuellen Elements)</p>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	font-size: 20px;
+	width: 5em; /* 5 * 20px = 100px */
+}</pre>
+</code>
+</div>
+
+					</article>
+					
+					<article>
+					<h4>Wiederholung <span class="light">| Einheit 4 | Größenangaben</h4>
+					
+					<h2>rem</h2>
+					<p>font-size (wie geerbt)</p>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>html	{
+	font-size: 15px;
+}	
+
+div	{
+	font-size 20px;
+	width: 5rem; /* 5 * 15px = 75px */
+}</pre>
+</code>
+</div>
+
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 4 | float</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	float: left;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	float: right;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	clear: both;
+}</pre>
+</code>
+</div>
+
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 4 | clearfix</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}</pre>
+</code>
+</div>
+
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 4 | display</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>img	{
+	display: block;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	display: inline;
+}</pre>
+</code>
+</div>
+
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 4 | display</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	display: inline-block;
+}</pre>
+</code>
+</div>
+
+				</article>
+				
+				<article>
+					<h4>Positionierung</h4>
+
+					<h2>static</h2>
+					<p>Positionierung im Dokumentfluss.</p>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	position: static;
+}</pre>
+</code>
+</div>
+
+				</article>
+				
+				<article>
+					<h4>Positionierung</h4>
+
+					<h2>relative</h2>
+					<p>Positionierung relativ zur normalen Position des Elements.</p>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	position: relative;
+	top: -40px;
+	right: 25px;
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Positionierung</h4>
+
+					<h2>absolute</h2>
+					<p>Positionierung relativ zum nächsten Elternelment, welches nicht static ist.</p>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>
+.container	{
+	position: relative;
+}
+
+.content	{
+	position: absolute;
+	top: -40px;
+	right: 25px;
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Positionierung</h4>
+
+					<h2>fixed</h2>
+					<p>Positionierung relativ zum Browserfenster.</p>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	position: fixed;
+	top: 40px;
+	left: 25px;
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Positionierung</h4>
+
+					<h2>absolute & fixed</h2>
+					<p>Achtung: Größe des Elements wirkt sich nicht mehr auf Elternelemente aus!</p>
+				</article>
+				
+				<article>
+					<h4>Positionierung</h4>
+
+					<h2>z-index</h2>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	z-index: 999;
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Browsertools</h4>
+
+					<h2>Safari</h2>
+					<p>Einstellungen › Erweitert › Menü „Entwickler“ […] anzeigen</p>
+					
+					<h2>Chrome</h2>
+					<p>Anzeigen › Entwickler</p>
+					
+					<h2>Firefox</h2>
+					<p>Extras › Web-Entwicklung</p>
+				</article>
+				
+				<article>
+					<h4>Box-Styling</h4>
+
+					<h2>Größe</h2>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	width: 100%;
+	height: 500px;
+	padding: 30px;
+	margin: 50px;
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Box-Styling</h4>
+
+					<h2><span class="tag">background-color</span></h2>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	background-color: #FF0000;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	background-color: rgba(0,0,0,0.5);
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Box-Styling</h4>
+
+					<h2><span class="tag">background-image</span></h2>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	background-image: url("bg.jpg");
+	background-repeat: no-repeat; /* repeat, repeat-x, repeat-y, no-repeat /*
+	background-position: left top; /* left, center, right, top, center, bottom /*
+	background-size: cover; /* auto, Größenangaben (50px 10px), cover, contain /* 
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Box-Styling</h4>
+
+					<h2><span class="tag">opacity</span></h2>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	opacity: .5;
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Box-Styling</h4>
+
+					<h2><span class="tag">box-shadow</span></h2>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	box-shadow: 3px 3px 4px 5px #000000; /* Horizontale Position, Vertikale Position, Blur, Size, Farbe */
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Box-Styling</h4>
+
+					<h2><span class="tag">border</span></h2>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	border: 1px solid #000000;
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Box-Styling</h4>
+
+					<h2><span class="tag">border-radius</span></h2>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	border-radius: 10px;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	border-radius: 10px 5px 10px 5px;
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Nächste Sitzung</h4>
+										
+					<h1 class="title">
+					<span class="light">Einheit 6</span><br>20.11.14</h1>
+				</article>				
+			
+			</main>
+		</div>
+		
+		<div class="progress">
+			<div class="bar"><span class="current">2</span> / <span class="all">10</span></div>
+		</div>
+	
+	</body>
+	
+</html>
