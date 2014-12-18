@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+html	{
+	font-size: 10px;
+}
+
+
+/************************
+*		STRUCTURE		*
+************************/
+
+ul	{
+	margin: 0;
+	padding: 0;
+}
+
+ul li	{
+	list-style: none;
+	
+	padding: 1rem;
+	margin: 1rem;
+	float: left;
+	background-color: #AAAAAA;
+}
+
+ul li:hover	{
+	background-color: #CCCCCC;
+	cursor: pointer;
+}
+
+.box	{
+	height: 30rem;
+	width: 0rem;
+	padding: 0rem;
+	margin: 0rem;
+	transition: width 1s;
+	overflow: hidden;
+	float: left;
+}
+
+.box.active	{
+	width: 30rem;
+}
+
+.box-content	{
+	background-color: #AAAAAA;
+	width: 26rem;
+	margin: 1rem;
+	padding: 1rem;
+}
+
+p	{
+	margin-top: 0;
+}
+/************************
+*		TYPOGRAPHY		*
+************************/
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.5em;
+
+	text-rendering: optimizeLegibility;
+	-webkit-font-variant-ligatures: inherit;
+	-moz-font-variant-ligatures: inherit;
+	font-variant-ligatures: inherit;
+	
+	background-color: #FFFFFF;
+}
+
+a {
+	color: #000000;
+	text-decoration: underline;
+	border: none;
+	transition: all 0.5s;
+}
+
+a:hover {
+	color: #323232;
+	text-decoration: none;
+}
+
+p {
+	margin-bottom: 0.7rem;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 1.2em;
+	font-weight: 500;
+	margin-top: 4rem;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	font-size: 1.4rem;
+	line-height: 1.2em;
+	font-weight: 500;
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+}
+
+h3 {
+	font-size: 1rem;
+	line-height: 1.2em;
+	font-weight: 500;
+	margin-top: 1.4rem;
+	margin-bottom: .6rem;
+}
+
+h1 + h2, h2 + h3, h1:first-child, h2:first-child, h3:first-child{
+	margin-top: 0;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+/************************
+*		CONTENTS		*
+************************/
+
+
+/************************
+*		RESPONSIVE		*
+************************/
+@media all and (max-width: 480px) {
+
+}
+
+/************************
+*		CLEARFIX		*
+************************/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}

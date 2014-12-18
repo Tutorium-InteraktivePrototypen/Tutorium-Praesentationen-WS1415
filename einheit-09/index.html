@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+
+		<!-------------------------<!--! META ------------------------------>
+		<title>Einheit 9 – Interaktive Prototypen mit HTML, CSS & JS</title>
+		<link rel="icon" href="imgs/sprites/favicon.ico" type="image/png" />
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+		<!-------------------------<!--! STYLES ------------------------------>
+		<link rel="stylesheet" type="text/css" href="../styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+
+		<!-------------------------<!--! LIBARIES ------------------------------>
+		<script type="text/javascript" src="../scripts/libaries/jquery.js"></script>
+
+		<!-------------------------<!--! SCRIPTS ------------------------------>
+		<script type="text/javascript" src="../scripts/scripts.js"></script>
+		<script type="text/javascript" src="../scripts/linenumbers.js"></script>
+		
+	</head>
+
+	<body>
+	
+		<div class="container">
+			<main>
+		
+				<article>
+					<h4>Tutorium
+					<span class="light">| Einheit 9 – 18.12.14</span></h4>
+				
+					<h1 class="title">Interaktive Prototypen<br>
+						<span class="light">mit HTML, CSS & JS</span></h1>				
+				</article>
+				
+				<article>
+					<h4>Übersicht <span class="light">| Einheit 8</span></h4>
+										
+					<ul>
+						<li>jQuery</li>
+					</ul>
+				</article>	
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8</span></h4>
+
+					<h1 class="title">JavaScript</h1>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8 | JavaScript einbinden</span></h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;script type=&quot;text/javascript&quot; src=&quot;scripts/scripts.js&quot;&gt;&lt;/script&gt;</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8 | JavaScript</span></h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>console.log("test");</pre></code></div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>// Kommentar</pre></code></div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>var i = 0;
+var j = 0.1
+var k = "String";
+var l = true;</pre></code></div>
+
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8 | JavaScript</span></h4>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>if (test == true)	{
+	console.log("Test ist wahr");
+	test = false;
+} else if (i != 2 && k == "String") {
+	console.log("i ist nicht 2 und k ist \"String\"");
+}</pre></code></div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>for (var i = 0; i &lt; 5; i++)	{
+	console.log(i);
+}</pre></code></div>
+				
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8</span></h4>
+					<h1 class="title">jQuery</h1>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8 | jQuery einbinden</span></h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>&lt;script type=&quot;text/javascript&quot; src=&quot;scripts/libaries/jquery.js&quot;&gt;&lt;/script&gt;</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8 | jQuery</span></h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$(selector).action().action(wert);</pre></code></div>
+				
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8 | jQuery</span></h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$("header")</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$(".tag")</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$("main .box")</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8 | jQuery</span></h4>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$(window)</pre>
+</code>
+</div>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$(document)</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$(this)</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8 | jQuery</span></h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$(document).ready( function()	{
+	// jQuery-Code	
+});</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8 | jQuery</span></h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>var width = $("main #box").width();
+var height = $("main #box").height();</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>var width = 200;
+$("main #box").width(width);</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>var width = $("main #box").outerWidth();
+var height = $("main #box").outerHeight();</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8 | jQuery</span></h4>
+				
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>var offsetTop = $("main #box").offset().top;
+var offsetLeft = $("main #box").offset().left;</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$("main #box").offset({top: 10, left: 20});</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8 | jQuery</span></h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").click( function()	{
+	$(this).addClass("active");
+});</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").click( function()	{
+	$(this).removeClass("active");
+});</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").click( function()	{
+	$(this).toggleClass("active");
+});</pre>
+</code>
+</div>
+				</article>
+				
+<article>
+					<h4>Wiederholung <span class="light">| Einheit 8 | jQuery</span></h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").dblclick( function()	{
+	$(this).addClass("active");
+});</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").mouseenter( function()	{
+	$(this).addClass("active");
+});</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").mouseleave( function()	{
+	$(this).addClass("active");
+});</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 8 | jQuery</span></h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$(document).scroll( function()	{
+	var scrollTop = $(this).scrollTop();
+	$("main .box").offset({top: scrollTop);	
+});
+</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").scroll( function()	{
+	var scrollTop = $(this).scrollTop();
+	$(this).offset({left: scrollTop/2});
+});
+</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>jQuery</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>$(".box-container").css({"background-color": "#FF0000"});
+</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>jQuery</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>var boxIsActive = $(".box").hasClass("active);
+if (boxIsActive == true)	{
+	// Code
+}
+</pre>
+</code>
+</div>
+				</article>
+				
+				
+				<article>
+					<h4>jQuery</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>var box1 = $("#box1");
+$(".box-container").append(box1);
+</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>var box1 = $("#box1");
+$(".box-container").prepend(box1);
+</pre>
+</code>
+</div>
+				</article>
+								
+				<article>
+					<h4>Nächste Sitzung</h4>
+										
+					<h1 class="title">
+					<span class="light">Einheit 10</span><br>08.01.15</h1>
+				</article>				
+			
+			</main>
+		</div>
+		
+		<div class="progress">
+			<div class="bar"><span class="current">2</span> / <span class="all">10</span></div>
+		</div>
+	
+	</body>
+	
+</html>

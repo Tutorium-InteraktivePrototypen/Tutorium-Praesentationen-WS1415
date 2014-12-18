@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+
+		<!-------------------------<!--! META ------------------------------>
+		<title>Einheit 7 – Interaktive Prototypen mit HTML, CSS & JS</title>
+		<link rel="icon" href="imgs/sprites/favicon.ico" type="image/png" />
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+		<!-------------------------<!--! STYLES ------------------------------>
+		<link rel="stylesheet" type="text/css" href="../styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+
+		<!-------------------------<!--! LIBARIES ------------------------------>
+		<script type="text/javascript" src="../scripts/libaries/jquery.js"></script>
+
+		<!-------------------------<!--! SCRIPTS ------------------------------>
+		<script type="text/javascript" src="../scripts/scripts.js"></script>
+		<script type="text/javascript" src="../scripts/linenumbers.js"></script>
+		
+	</head>
+
+	<body>
+	
+		<div class="container">
+			<main>
+		
+				<article>
+					<h4>Tutorium
+					<span class="light">| Einheit 7 – 04.12.14</span></h4>
+				
+					<h1 class="title">Interaktive Prototypen<br>
+						<span class="light">mit HTML, CSS & JS</span></h1>				
+				</article>
+				
+				<article>
+					<h4>Übersicht <span class="light">| Einheit 7</span></h4>
+										
+					<ul>
+						<li>Wiederholung: :hover</li>
+						<li>Wiederholung: overflow</li>
+						<li>Wiederholung: transition</li>
+						<li>Wiederholung: transform</li>
+						<li>Fragen</li>
+						<li>Übung</li>
+					</ul>
+				</article>	
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 6 | :hover</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>a	{
+	color: #FF0000;
+}
+
+a:hover	{
+	color: #00FF00;
+	text-decoration: none;
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 6 | overflow</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	overflow: visible;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>overflow: hidden;</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>overflow: scroll;</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>overflow: auto;</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 6 | overflow</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	overflow-x: hidden;
+	overflow-y: scroll;
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 6 | transition</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	width: 5rem;
+	transition: all 1s;
+}
+
+div:hover	{
+	width: 10rem;
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 6 | transition</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	width: 5rem;
+	height: 2rem;
+	background-color: #000000;
+	transition: background-color .7s ease-in-out;
+	transition: width 2s;
+
+}
+
+div:hover	{
+	width: 10rem;
+	height: 5rem;
+	background-color: #FF0000;
+}</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 6 | transform</h4>
+					
+					<h2>translate</h2>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>transform: translate(x,y)</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>transform: translateX(x)</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>transform: translate3d(x,y,z)</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 6 | transform</h4>
+					
+					<h2>scale</h2>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>transform: scale(x,y)</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>transform: scaleX(x)</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>transform: scaleZ(z)</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>transform: scale(1.2,2)</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 6 | transform</h4>
+					
+					<h2>rotate</h2>
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>transform: rotate(angle)</pre>
+</code>
+</div>
+
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>transform: rotate3d(x,y,z,angle)</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					<h4>Wiederholung <span class="light">| Einheit 6 | transform</h4>
+					
+<div class="code-snippet code-container cf">
+<div class="lines"></div>
+<code>
+<pre>transform: rotate(20deg) scale(1.2, 3)</pre>
+</code>
+</div>
+				</article>
+				
+				<article>
+					
+<h1 class="title">Fragen</h1>
+				</article>
+				
+				<article>
+					<h4>Übung</h4>
+					
+<h1 class="title">Dashboard</h1>
+				</article>
+				
+				<article>
+					<h4>Nächste Sitzung</h4>
+										
+					<h1 class="title">
+					<span class="light">Einheit 8</span><br>11.12.14</h1>
+				</article>				
+			
+			</main>
+		</div>
+		
+		<div class="progress">
+			<div class="bar"><span class="current">2</span> / <span class="all">10</span></div>
+		</div>
+	
+	</body>
+	
+</html>
